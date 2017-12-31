@@ -1,0 +1,80 @@
+[33mcommit 0b5ecf1f9be73cd357936918d722691133042c7c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: mrdingjay <992356565@qq.com>
+Date:   Sun Dec 31 20:00:10 2017 +0800
+
+    fisrt commit
+
+ .classpath                                         |   7 [32m+[m
+ .project                                           |  17 [32m+[m
+ .settings/org.eclipse.jdt.core.prefs               |  11 [32m+[m
+ .../tutorial/lwjgl/Introduction$1.class            | Bin [31m0[m -> [32m739[m bytes
+ bin/silvertiger/tutorial/lwjgl/Introduction.class  | Bin [31m0[m -> [32m3412[m bytes
+ bin/silvertiger/tutorial/lwjgl/Main.class          | Bin [31m0[m -> [32m607[m bytes
+ .../tutorial/lwjgl/core/FixedTimestepGame.class    | Bin [31m0[m -> [32m2056[m bytes
+ bin/silvertiger/tutorial/lwjgl/core/Game.class     | Bin [31m0[m -> [32m4234[m bytes
+ bin/silvertiger/tutorial/lwjgl/core/Timer.class    | Bin [31m0[m -> [32m1451[m bytes
+ .../tutorial/lwjgl/core/VariableTimestepGame.class | Bin [31m0[m -> [32m1902[m bytes
+ bin/silvertiger/tutorial/lwjgl/game/AABB.class     | Bin [31m0[m -> [32m1070[m bytes
+ bin/silvertiger/tutorial/lwjgl/game/Ball.class     | Bin [31m0[m -> [32m3043[m bytes
+ bin/silvertiger/tutorial/lwjgl/game/Entity.class   | Bin [31m0[m -> [32m3056[m bytes
+ bin/silvertiger/tutorial/lwjgl/game/Paddle.class   | Bin [31m0[m -> [32m1756[m bytes
+ bin/silvertiger/tutorial/lwjgl/graphic/Color.class | Bin [31m0[m -> [32m2852[m bytes
+ .../tutorial/lwjgl/graphic/Renderer.class          | Bin [31m0[m -> [32m9905[m bytes
+ .../tutorial/lwjgl/graphic/Shader.class            | Bin [31m0[m -> [32m2887[m bytes
+ .../tutorial/lwjgl/graphic/ShaderProgram.class     | Bin [31m0[m -> [32m5656[m bytes
+ .../tutorial/lwjgl/graphic/Texture.class           | Bin [31m0[m -> [32m3549[m bytes
+ .../tutorial/lwjgl/graphic/VertexArrayObject.class | Bin [31m0[m -> [32m742[m bytes
+ .../lwjgl/graphic/VertexBufferObject.class         | Bin [31m0[m -> [32m1430[m bytes
+ .../tutorial/lwjgl/graphic/Window$1.class          | Bin [31m0[m -> [32m904[m bytes
+ .../tutorial/lwjgl/graphic/Window.class            | Bin [31m0[m -> [32m3122[m bytes
+ bin/silvertiger/tutorial/lwjgl/math/Matrix2f.class | Bin [31m0[m -> [32m2523[m bytes
+ bin/silvertiger/tutorial/lwjgl/math/Matrix3f.class | Bin [31m0[m -> [32m3370[m bytes
+ bin/silvertiger/tutorial/lwjgl/math/Matrix4f.class | Bin [31m0[m -> [32m6907[m bytes
+ bin/silvertiger/tutorial/lwjgl/math/Vector2f.class | Bin [31m0[m -> [32m2192[m bytes
+ bin/silvertiger/tutorial/lwjgl/math/Vector3f.class | Bin [31m0[m -> [32m2510[m bytes
+ bin/silvertiger/tutorial/lwjgl/math/Vector4f.class | Bin [31m0[m -> [32m2451[m bytes
+ .../tutorial/lwjgl/state/EmptyState.class          | Bin [31m0[m -> [32m740[m bytes
+ .../tutorial/lwjgl/state/ExampleState.class        | Bin [31m0[m -> [32m5195[m bytes
+ .../tutorial/lwjgl/state/GameState.class           | Bin [31m0[m -> [32m5194[m bytes
+ .../tutorial/lwjgl/state/LegacyExampleState.class  | Bin [31m0[m -> [32m4921[m bytes
+ .../tutorial/lwjgl/state/LegacyTextureState.class  | Bin [31m0[m -> [32m5104[m bytes
+ bin/silvertiger/tutorial/lwjgl/state/State.class   | Bin [31m0[m -> [32m476[m bytes
+ .../tutorial/lwjgl/state/StateMachine.class        | Bin [31m0[m -> [32m1874[m bytes
+ .../tutorial/lwjgl/state/TextureState.class        | Bin [31m0[m -> [32m5353[m bytes
+ bin/silvertiger/tutorial/lwjgl/text/Font.class     | Bin [31m0[m -> [32m7910[m bytes
+ bin/silvertiger/tutorial/lwjgl/text/Glyph.class    | Bin [31m0[m -> [32m549[m bytes
+ src/silvertiger/tutorial/lwjgl/Introduction.java   | 171 [32m+++++++[m
+ src/silvertiger/tutorial/lwjgl/Main.java           |  46 [32m++[m
+ .../tutorial/lwjgl/core/FixedTimestepGame.java     |  85 [32m++++[m
+ src/silvertiger/tutorial/lwjgl/core/Game.java      | 242 [32m++++++++++[m
+ src/silvertiger/tutorial/lwjgl/core/Timer.java     | 146 [32m++++++[m
+ .../tutorial/lwjgl/core/VariableTimestepGame.java  |  75 [32m++++[m
+ src/silvertiger/tutorial/lwjgl/game/AABB.java      |  73 [32m+++[m
+ src/silvertiger/tutorial/lwjgl/game/Ball.java      | 151 [32m+++++++[m
+ src/silvertiger/tutorial/lwjgl/game/Entity.java    | 140 [32m++++++[m
+ src/silvertiger/tutorial/lwjgl/game/Paddle.java    | 102 [32m+++++[m
+ src/silvertiger/tutorial/lwjgl/graphic/Color.java  | 262 [32m+++++++++++[m
+ .../tutorial/lwjgl/graphic/Renderer.java           | 491 [32m+++++++++++++++++++++[m
+ src/silvertiger/tutorial/lwjgl/graphic/Shader.java | 143 [32m++++++[m
+ .../tutorial/lwjgl/graphic/ShaderProgram.java      | 254 [32m+++++++++++[m
+ .../tutorial/lwjgl/graphic/Texture.java            | 207 [32m+++++++++[m
+ .../tutorial/lwjgl/graphic/VertexArrayObject.java  |  70 [32m+++[m
+ .../tutorial/lwjgl/graphic/VertexBufferObject.java | 128 [32m++++++[m
+ src/silvertiger/tutorial/lwjgl/graphic/Window.java | 187 [32m++++++++[m
+ src/silvertiger/tutorial/lwjgl/math/Matrix2f.java  | 188 [32m++++++++[m
+ src/silvertiger/tutorial/lwjgl/math/Matrix3f.java  | 227 [32m++++++++++[m
+ src/silvertiger/tutorial/lwjgl/math/Matrix4f.java  | 447 [32m+++++++++++++++++++[m
+ src/silvertiger/tutorial/lwjgl/math/Vector2f.java  | 176 [32m++++++++[m
+ src/silvertiger/tutorial/lwjgl/math/Vector3f.java  | 196 [32m++++++++[m
+ src/silvertiger/tutorial/lwjgl/math/Vector4f.java  | 188 [32m++++++++[m
+ .../tutorial/lwjgl/state/EmptyState.java           |  53 [32m+++[m
+ .../tutorial/lwjgl/state/ExampleState.java         | 198 [32m+++++++++[m
+ .../tutorial/lwjgl/state/GameState.java            | 169 [32m+++++++[m
+ .../tutorial/lwjgl/state/LegacyExampleState.java   | 189 [32m++++++++[m
+ .../tutorial/lwjgl/state/LegacyTextureState.java   | 196 [32m++++++++[m
+ src/silvertiger/tutorial/lwjgl/state/State.java    |  78 [32m++++[m
+ .../tutorial/lwjgl/state/StateMachine.java         | 110 [32m+++++[m
+ .../tutorial/lwjgl/state/TextureState.java         | 202 [32m+++++++++[m
+ src/silvertiger/tutorial/lwjgl/text/Font.java      | 415 [32m+++++++++++++++++[m
+ src/silvertiger/tutorial/lwjgl/text/Glyph.java     |  56 [32m+++[m
+ 73 files changed, 6096 insertions(+)
